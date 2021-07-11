@@ -1,1 +1,70 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+.gradient-banner {
+  background-image: linear-gradient(315deg, #d4418e 0%, #0652c5 74%);
+}
+
+.hit-the-floor {
+    color: #fff;
+    font-size: 5em;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow: 
+      0 1px 0 #ccc, 
+      0 2px 0 #c9c9c9, 
+      0 3px 0 #bbb, 
+      0 4px 0 #b9b9b9, 
+      0 5px 0 #aaa, 
+      0 6px 1px rgba(0,0,0,.1), 
+      0 0 5px rgba(0,0,0,.1), 
+      0 1px 3px rgba(0,0,0,.3), 
+      0 3px 5px rgba(0,0,0,.2), 
+      0 5px 10px rgba(0,0,0,.25), 
+      0 10px 10px rgba(0,0,0,.2), 
+      0 20px 20px rgba(0,0,0,.15);
+  }
+
+  
+  .hit-the-floor {
+    text-align: center;
+  }
+  
+  .glass-container {
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+   }
+  
+  /****** Blue moon **********/
+  
+  
+  .bluemoon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #9CCAF7 0%, #8BEAFB 100%);
+  
+     box-shadow:0 0 50px #9CCAF7, 0 0 155px #8BEAFB, inset 0px 5px 55px 20px rgba(232,248,255,0.7), inset 55px 0 50px 50px #8BEAFB;
+  }
+  
+  
+  @keyframes glow {
+    from {
+       text-shadow: 0 0 5px #fff, 0 0 11px #8BEAFB, 0 0 7px #0073e6, 0 0 22px #9CCAF7, 0 0 22px #8BEAFB, 0 0 33px #8BEAFB, 0 0 20px #9CCAF7;
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8BEAFB, 0 0 40px #8BEAFB, 0 0 50px #9CCAF7, 0 0 60px #9CCAF7, 0 0 70px #9CCAF7;
+    }
+  }
+  
+  .rotate {
+    animation: rotation 5s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }

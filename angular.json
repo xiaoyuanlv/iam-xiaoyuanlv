@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "77adcccb-775d-4df4-9d86-90f58d67b2dd"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -17,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/iam-xiaoyuanlv",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,6 +30,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/css/blk.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -36,8 +40,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -94,6 +98,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/css/blk.css",
               "src/styles.css"
             ],
             "scripts": []

@@ -1,0 +1,438 @@
+<div class="profile-page">
+    <div class="wrapper">
+        <div class="page-header">
+            <img src="../assets/img/dots.png" class="dots">
+            <img src="../assets/img/path4.png" class="path">
+            <div class="container align-items-center">
+                
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <h1 class="profile-title text-left">Xiao Yuan</h1>
+                        <h5 class="text-on-back">{{ 'about_me' | translate }}</h5>
+                        <p class="profile-description">
+                            <span class="highlightmarker">{{ 'about_intro' | translate }}
+                                <i class="fas fa-book-open"></i></span> <br />
+                                {{ 'about_message' | translate }}
+                        </p>
+                        <div class="btn-wrapper profile pt-2">
+                           
+                            
+                                <a class="btn btn-icon btn-success btn-round mb-2" target="_blank" href="https://linktr.ee/xiaoyuanlv"  data-toggle="tooltip"
+                                data-original-title="Links Tree">
+                                    <i class="fas fa-globe"></i>
+                                </a>
+                           
+                            <span class="dropdown px-2">
+                                <a class="btn btn-primary btn-round dropdown-toggle"  data-toggle="tooltip"
+                                data-original-title="Language" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-language mr-2"></i>   {{ translate.currentLang }} 
+                                </a>
+                                <div class="dropdown-menu dropdown-with-icons">
+                                    <button class="dropdown-item" *ngFor="let language of translate.getLangs()" 
+                                      (click)='switchLang(language)' >
+                                      <i class="tim-icons icon-paper"></i> {{ language }}
+                                    </button>
+                                  </div>
+                            </span>
+                               
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+                        <div class="card card-profile card-plain">
+                            <div class="card-header">
+                                <img src="../../../../assets/img/profile.jpg" class="img-center img-fluid rounded-circle">
+                                <h4 class="title"> {{ 'about_title_name' | translate }} </h4>
+                            </div>
+                            <div class="card-body">
+                                <ul class="nav nav-tabs nav-tabs-daynight justify-content-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#linka">
+                                            <i class="fas fa-user-astronaut"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#linkb">
+                                            <i class="fas fa-school"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#linkc">
+                                            <i class="fas fa-star"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#linkd">
+                                            <i class="fas fa-heart"></i>
+                                        </a>
+                                    </li>
+                                   
+                                </ul>
+                                <div class="tab-content tab-subcategories">
+                                    <div class="tab-pane active" id="linka">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover " id="plain-table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-user highlightmarker"></i> &nbsp; <span class="highlightmarker"> {{ 'name' | translate }} ... </span> &nbsp;
+                                                            <span class="badge badge-white"> {{ 'my_name' | translate }} </span>
+                                                            <span class="badge badge-white ml-2"> {{ 'my_chinese_name' | translate }}  </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-comment highlightmarker"></i> &nbsp; 
+                                                            <span class="highlightmarker"> {{ 'call_me' | translate }} ... </span> &nbsp; 
+                                                            <span class="badge badge-white">{{ 'my_nick_name' | translate }}</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-birthday-cake highlightmarker"></i> &nbsp;
+                                                            <span class="highlightmarker"> {{ 'birthday' | translate }} ... </span> &nbsp;
+                                                            <span class="badge badge-white">{{ 'my_birthday' | translate }}</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-baby highlightmarker"></i> &nbsp;
+                                                            <span class="highlightmarker"> {{ 'i_was_born_in' | translate }} ... </span> &nbsp;
+                                                            <span class="badge badge-white">{{ 'yangon_myanmar' | translate }}</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-dharmachakra highlightmarker"></i> &nbsp;
+                                                            <span class="highlightmarker"> {{ 'religion' | translate }} ... </span> &nbsp;
+                                                            <span class="badge badge-white">{{ 'buddhism' | translate }}</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-carrot highlightmarker"></i> &nbsp; <span
+                                                                class="highlightmarker"> {{ 'food' | translate }} ... </span> &nbsp; <span
+                                                                class="badge badge-white">{{ 'vegan' | translate }}</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-genderless highlightmarker"></i> &nbsp; <span
+                                                                class="highlightmarker"> {{ 'gender' | translate }} ... </span> &nbsp; <span
+                                                                class="badge badge-white">{{ 'non-binary' | translate }}</span>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="linkb">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover " id="plain-table">
+                                               
+                                                <tbody>
+                                                    
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-school highlightmarker"></i> &nbsp; <span
+                                                                class="highlightmarker">{{ 'high_school' | translate }} ...</span> &nbsp; <p> {{ 'my_high_school' | translate }}  </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-graduation-cap highlightmarker"></i> &nbsp;
+                                                            <span class="highlightmarker">{{ 'graduate' | translate }} ...</span> &nbsp; <span
+                                                                class="badge badge-white">B.C.Tech(Hons) * UCSY
+                                                            </span> <br /> <span class="badge badge-white"> IADCS * NCC
+                                                                Education </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-language highlightmarker"></i> &nbsp; <span
+                                                                class="highlightmarker">{{ 'language' | translate }} ...</span> <br/> <span
+                                                                class="badge badge-white">{{ 'burmese' | translate }}</span>  <span
+                                                                class="badge badge-white ml-2">{{ 'chinese' | translate }}</span>  <span
+                                                                class="badge badge-white ml-2">{{ 'english' | translate }}</span> 
+                                                            <span class="badge badge-white ml-2" >{{ 'korean' | translate }}</span>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="linkc">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover " id="plain-table">
+                                               
+                                                <tbody>
+                                                    
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-star highlightmarker"></i> &nbsp; <span
+                                                                class="highlightmarker">{{ 'star' | translate }} ...</span> &nbsp; ♒️ 
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-moon highlightmarker"></i> &nbsp; <span
+                                                            class="highlightmarker">{{ 'moon' | translate }} ...</span> &nbsp; ♏️ 
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-circle highlightmarker"></i> &nbsp; <span
+                                                            class="highlightmarker">{{ 'rising' | translate }} ...</span> &nbsp; ♋️ 
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-calendar highlightmarker"></i> &nbsp; <span
+                                                                class="highlightmarker">{{ 'year' | translate }} ...</span> &nbsp; 🐲
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-calendar-week highlightmarker"></i> &nbsp; <span
+                                                            class="highlightmarker">{{ 'month' | translate }} ...</span> &nbsp; 🐂
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-calendar-day highlightmarker"></i> &nbsp; <span
+                                                            class="highlightmarker">{{ 'day' | translate }} ...</span> &nbsp; 🐰
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-clock highlightmarker"></i> &nbsp; <span
+                                                            class="highlightmarker">{{ 'time' | translate }} ...</span> &nbsp; 🐓
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="tab-pane" id="linkd">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover " id="plain-table">
+                                                <tbody>
+                                                   
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-heart highlightmarker"></i> &nbsp; <span
+                                                                class="highlightmarker"> {{ 'i_value' | translate }} ...</span>
+                                                            &nbsp;
+                                                            <span class="badge badge-white">{{ 'five_precepts_of_buddhism' | translate }}</span>
+                                                            <span class="badge badge-white ml-2">{{ 'wisdom' | translate }}</span>
+                                                            <span class="badge badge-white ml-2">{{ 'freedom' | translate }}</span>
+                                                            <span class="badge badge-white ml-2">{{ 'respect' | translate }}</span>
+                                                            <span class="badge badge-white ml-2">{{ 'love' | translate }}</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-lightbulb highlightmarker"></i> &nbsp; <span
+                                                                class="highlightmarker"> {{ 'i_know' | translate }} ...</span>
+                                                            &nbsp; <p> {{ 'what_i_know' | translate }} </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-scroll highlightmarker"></i> &nbsp; <span
+                                                                class="highlightmarker"> {{ 'letter_to_the_young' | translate }} ...</span>
+                                                            &nbsp; <br/> <p> {{ 'my_letter_to_the_young' | translate }} </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-book-open highlightmarker"></i> &nbsp; <span
+                                                                class="highlightmarker"> {{ 'hobby' | translate }}...</span> <span
+                                                                class="badge badge-white"> 📖  {{ 'reading' | translate }} </span> . <span
+                                                                class="badge badge-white"> 💻 {{ 'code_or_design' | translate }} </span> .
+                                                            <span class="badge badge-white"> 🏡 {{ 'gardening' | translate }} </span> .
+                                                            <span class="badge badge-white"> 🎮  {{ 'game' | translate }} </span> .
+                                                            <span class="badge badge-white"> 🚴  {{ 'bicycle' | translate }} </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-quote-left highlightmarker"></i> &nbsp; <span
+                                                                class="highlightmarker">{{ 'quote' | translate }} ...</span> &nbsp;<br/> <p> {{ 'my_fav_quote' | translate }} </p>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-6">
+                        <div class="row justify-content-center align-items-center">
+                            <img alt="..." src="../../../assets/img/cycle.png" class="w-full rotate"
+                                style="width: 55%; height: 55%;" />
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <h1 class="profile-title text-left">{{ 'line' | translate }}</h1>
+                        <h5 class="text-on-back">{{ 'time' | translate }}</h5>
+
+                        <div class="table-responsive">
+                            <table class="table tablesorter " id="plain-table">
+                                <thead class=" text-primary">
+                                    <tr>
+                                        <th class="header">
+                                            <span class="highlightmarker">
+                                                <i class="fas fa-clock"></i> ... {{ 'in_this_life_time' | translate }}
+                                            </span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <i class="fas fa-road highlightmarker"></i> &nbsp;
+                                            <span class="highlightmarker"> 2021 … </span> &nbsp;  <span class="text-description"> {{ 'coding_with_stars' | translate }} </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fas fa-code highlightmarker"></i> &nbsp;
+                                            <span class="highlightmarker"> 2018 - 2020 … </span> &nbsp;  <span class="text-description"> {{ 'work_on_some_creative_projects_solo' | translate }}  </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fas fa-laptop-code highlightmarker"></i> &nbsp;
+                                            <span class="highlightmarker"> 2012 - 2016 … </span> &nbsp;  <span class="text-description"> {{ 'work_as_programmer_at_companies' | translate }} </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fas fa-graduation-cap highlightmarker"></i> &nbsp;
+                                            <span class="highlightmarker"> 2006 - 2011 … </span> &nbsp;  <span class="text-description"> {{ 'study_about_computer' | translate }} </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fas fa-seedling highlightmarker"></i> &nbsp;
+                                            <span class="highlightmarker"> 1995 - 2005 … </span> &nbsp;  <span class="text-description"> {{ 'high_school_life' | translate }} </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fas fa-star highlightmarker"></i> &nbsp;
+                                            <span class="highlightmarker"> 1989 … </span> &nbsp;  <span class="text-description">  {{ 'i_was_born' | translate }} </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        
+                        <h1 class="profile-title text-left">{{ 'i_choose' | translate }}</h1>
+                        <h5 class="text-on-back">{{ 'choices' | translate }}</h5>
+
+                                <div class="table-responsive">
+                                    <table class="table table-hover " id="plain-table">
+                                        <thead class=" text-primary">
+                                            <tr>
+                                                <th class="header">
+                                                    <span class="highlightmarker">
+                                                        <i class="fas fa-mountain"></i> ... {{ 'i_choose_the_one' | translate }}
+                                                    </span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <i class="fas fa-gift highlightmarker"></i> &nbsp;
+                                                    <span class="highlightmarker"> {{ 'the_perfect_gift_for_me' | translate }}  …
+                                                    </span> &nbsp; <span class="text-description">  {{ 'time' | translate }}  </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <i class="fas fa-dove highlightmarker"></i> &nbsp;
+                                                    <span class="highlightmarker"> {{ 'for_me_freedom_mean' | translate }} … </span> &nbsp;
+                                                    <span class="text-description"> {{ 'for_me_freedom_mean_quote' | translate }} </span>
+                                                 </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <i class="fas fa-gem highlightmarker"></i> &nbsp;
+                                                    <span class="highlightmarker"> {{ 'one_of_my_treasure' | translate }}  …
+                                                    </span> &nbsp;
+                                                    <span class="text-description">
+                                                        {{ 'honesty' | translate }}
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <i class="fas fa-music highlightmarker"></i> &nbsp;
+                                                    <span class="highlightmarker"> {{ 'the_song_that_define_me_is' | translate }} … </span>
+                                                    &nbsp;  <span class="text-description"> This is me </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <i class="fas fa-carrot highlightmarker"></i> &nbsp;
+                                                    <span class="highlightmarker"> {{ 'one_of_the_best_food_for_me' | translate }} …
+                                                    </span> &nbsp;  <span class="text-description"> {{ 'french_fried_potatoes' | translate }} </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            
+                                </div>
+                                <div class="col-md-4 ml-auto">
+                                    <div class="row justify-content-center align-items-center">
+                                        <img alt="..." src="../../../assets/img/thisorthat.png" class="w-full"
+                                            style="width: 77%; height: 77%;" />
+                                    </div>
+                                </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img alt="..." src="../../../assets/img/train.png"
+                            class="w-full align-bottom rounded-t-lg px-5 mt-5" style="width: 77%; height: 77%;" />
+                    </div>
+                    <div class="col-md-6">
+                        <span class="hit-the-floor">
+                           The only way is through!
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
