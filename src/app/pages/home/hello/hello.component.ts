@@ -46,7 +46,7 @@ export class HelloComponent implements OnInit {
     }
 
     this.currentHr = Number(this.datePipe.transform(this.mcurrentDate, 'H'));
-    if( this.currentHr >= 17 && this.currentHr < 23 ){
+    if( this.currentHr >= 8 && this.currentHr < 24 ){
       this.labsImage = 'clabsday.png';
     } 
 

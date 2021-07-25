@@ -1,0 +1,118 @@
+<div class="landing-page">
+    <div class="wrapper">
+        <div class="page-header">
+            <img src="../assets/img/blob.png" class="path">
+            <img src="../assets/img/path2.png" class="path2">
+            <img src="../assets/img/triunghiuri.png" class="shapes triangle">
+            <img src="../assets/img/waves.png" class="shapes wave">
+            <img src="../assets/img/patrat.png" class="shapes squares">
+            <img src="../assets/img/cercuri.png" class="shapes circle">
+
+
+            <div class="content-center ">
+                    <div class="row row-grid justify-content-center align-items-center text-center ">
+
+                        <div class="col-lg-6">
+
+                            <figure class="clock">
+                                <div class="clockface ctop">
+                                  <p class="pclock" id="clocks">0</p>
+                                </div>
+                                <div class="clockface cfront">
+                                  <p class="pclock" id="clockm">0</p>
+                                </div>
+                                <div class="clockface cleft">
+                                  <p class="pclock" id="clockh">0</p>
+                                </div>
+                              </figure>
+                                                    
+
+                        </div>
+
+                        <div class="col-lg-6 px-5"   >
+                            <h1 class="hit-the-floor">Time Machine</h1>
+                            <p class="hit-the-floor">{{  strTime }}</p>
+                        </div>
+
+                    </div>
+            </div>
+
+        </div>
+
+
+        <section class="section section-lg">
+
+            <img src="../assets/img/path4.png" class="path">
+            <div class="container">
+                <div class="content-center">
+
+                    <h1 class="hit-the-floor"><i class="fas fa-clock"></i></h1>
+                   
+                    <div class="row row-grid justify-content-center align-items-center text-center">
+
+                        <div class="col-lg-4 col-sm-12 py-5 d-flex justify-content-center text-center">
+                            <a (click)="showToast('', '6 - 7', 'gold', 'fas fa-clock', 1)" [ngStyle]="{'background': currentTime == 1 ? 'gold': ''}" class="icon-big text-center snowbtn fa-purple-btn">
+                                <img src="../../../../assets/img/clock/1.png" style="width:77px; height: auto;" class="img-fluid" />
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-12 py-5 d-flex justify-content-center text-center">
+                            <a (click)="showToast('', '7 - 8', 'gold', 'fas fa-clock', 2)" [ngStyle]="{'background': currentTime == 2 ? 'gold': ''}" class="icon-big text-center snowbtn fa-purple-btn">
+                                <img src="../../../../assets/img/clock/2.png" style="width:77px; height: auto;" class="img-fluid" />
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-12 py-5 d-flex justify-content-center text-center">
+                            <a (click)="showToast('', '8 - 10', 'gold', 'fas fa-clock', 3)" [ngStyle]="{'background': currentTime == 3 ? 'gold': ''}" class="icon-big text-center snowbtn fa-purple-btn">
+                                <img src="../../../../assets/img/clock/3.png" style="width:77px; height: auto;" class="img-fluid" />
+                            </a>
+                        </div>
+
+
+                        <div class="col-lg-4 col-sm-12 py-5 d-flex justify-content-center text-center">
+                            <a (click)="showToast('', '10 - 12', 'gold', 'fas fa-clock', 4)" [ngStyle]="{'background': currentTime == 4 ? 'gold': ''}" class="icon-big text-center snowbtn fa-purple-btn">
+                                <img src="../../../../assets/img/clock/4.png" style="width:77px; height: auto;" class="img-fluid" />
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-12 py-5 d-flex justify-content-center text-center">
+                            <a (click)="showToast('', '12 - 1', 'gold', 'fas fa-clock', 5)" [ngStyle]="{'background': currentTime == 5 ? 'gold': ''}" class="icon-big text-center snowbtn fa-purple-btn">
+                                <img src="../../../../assets/img/clock/5.png" style="width:77px; height: auto;" class="img-fluid" />
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-12 py-5 d-flex justify-content-center text-center">
+                            <a (click)="showToast('', '1 - 3', 'gold', 'fas fa-clock', 6)" [ngStyle]="{'background': currentTime == 6 ? 'gold': ''}" class="icon-big text-center snowbtn fa-purple-btn">
+                                <img src="../../../../assets/img/clock/6.png" style="width:77px; height: auto;" class="img-fluid" />
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-12 py-5 d-flex justify-content-center text-center">
+                            <a (click)="showToast('', '3 - 4', 'gold', 'fas fa-clock', 7)" [ngStyle]="{'background': currentTime == 7 ? 'gold': ''}" class="icon-big text-center snowbtn fa-purple-btn">
+                                <img src="../../../../assets/img/clock/7.png" style="width:77px; height: auto;" class="img-fluid" />
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-12 py-5 d-flex justify-content-center text-center">
+                            <a (click)="showToast('', '4 - 5', 'gold', 'fas fa-clock', 8)" [ngStyle]="{'background': currentTime == 8 ? 'gold': ''}" class="icon-big text-center snowbtn fa-purple-btn">
+                                <img src="../../../../assets/img/clock/8.png" style="width:77px; height: auto;" class="img-fluid" />
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-12 py-5 d-flex justify-content-center text-center">
+                            <a (click)="showToast('', '5 - 6', 'gold', 'fas fa-clock', 9)" [ngStyle]="{'background': currentTime == 9 ? 'gold': ''}" class="icon-big text-center snowbtn fa-purple-btn">
+                                <img src="../../../../assets/img/clock/9.png" style="width:77px; height: auto;" class="img-fluid" />
+                            </a>
+                        </div>
+
+                       
+                       
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+</div>

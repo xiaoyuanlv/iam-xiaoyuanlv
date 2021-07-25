@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
+figure.clock {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -105px;
+    margin-left: -105px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateX(-35deg) rotateY(45deg);
+    transform: rotateX(-35deg) rotateY(45deg);
+    transition: 2s;
+  }
+  
+  figure.clock:hover {
+    -webkit-transform: rotateX(-50deg) rotateY(45deg);
+    transform: rotateX(-50deg) rotateY(45deg);
+  }
+  
+  .clockface {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    background: #180A42;
+    text-align: center;
+  }
+  
+  .clockface p {
+    font-size: 100px;
+    font-family: "Squada One";
+    margin-top: 20px;
+    color: #2982ff;
+    text-shadow: 0px 0px 5px #000;
+    -webkit-animation: clockcolor 10s infinite;
+    animation: clockcolor 10s infinite;
+    line-height: 180px;
+  }
+  
+  .cfront {
+    -webkit-transform: translate3d(0, 0, 105px);
+    transform: translate3d(0, 0, 105px);
+    background: #111;
+  }
+  
+  .cleft {
+    -webkit-transform: rotateY(-90deg) translate3d(0, 0, 105px);
+    transform: rotateY(-90deg) translate3d(0, 0, 105px);
+    background: #151515;
+  }
+  
+  .ctop {
+    -webkit-transform: rotateX(90deg) translate3d(0, 0, 105px);
+    transform: rotateX(90deg) translate3d(0, 0, 105px);
+    background: #222;
+  }
+  
+  @keyframes clockcolor {
+    0% {
+      
+      color: #03d9c0;
+      text-shadow: 0px 0px 5px #02bda7;
+    }
+  
+    50% {
+      color: #fec94a;
+      text-shadow: 0px 0px 5px #e6b33c;
+    }
+  
+    80% {
+      color: #4a7af4;
+      text-shadow: 0px 0px 5px #436fe0;
+    }
+  }
+  
+  @-webkit-keyframes clockcolor {
+    0% {
+      color: #03d9c0;
+      text-shadow: 0px 0px 5px #02bda7;
+    }
+  
+    50% {
+      color: #fec94a;
+      text-shadow: 0px 0px 5px #e6b33c;
+    }
+  
+    80% {
+      color: #4a7af4;
+      text-shadow: 0px 0px 5px #436fe0;
+    }
+  }
+  
+  

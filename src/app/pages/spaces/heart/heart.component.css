@@ -1,0 +1,15 @@
+svg .draw {
+    stroke: #000;
+    stroke-width: 5px;
+    fill: transparent;
+    animation: drawline 7s forwards infinite;
+    stroke-dashoffset: 3300;
+    stroke-dasharray: 3300;
+  }
+  
+  @keyframes drawline {
+    to {
+      stroke-dashoffset: 0;
+      stroke: #c221a9;
+    }
+  }
