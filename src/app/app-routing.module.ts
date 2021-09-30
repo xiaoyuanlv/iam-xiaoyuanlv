@@ -57,23 +57,23 @@ const routes: Routes = [
       { path: '', redirectTo: '/', pathMatch: 'full' },
     ]
   },
-  {
-    path: 'spaces',
-    component: IndexLayoutComponent,
-    children: [
-      { path: '', component: XspaceComponent },
-      { path: 'star', component:  StarComponent },
-      { path: 'moon', component:  MoonComponent },
-      { path: 'sun', component:  SunComponent },
-      { path: 'garden', component:  GardenComponent },
-      { path: 'heart', component:  HeartComponent },
-      { path: 'bookmark', component:  BookmarkComponent },
-      { path: 'timemachine', component:  TimemachineComponent },
-      { path: 'appgallery', component:  AppgalleryComponent },
-      { path: 'calendar', component:  ThedayComponent },
-      { path: '**', redirectTo: '', pathMatch: 'full' },
-    ]
-  },
+  // {
+  //   path: 'spaces',
+  //   component: IndexLayoutComponent,
+  //   children: [
+  //     { path: '', component: XspaceComponent },
+  //     // { path: 'star', component:  StarComponent },
+  //     // { path: 'moon', component:  MoonComponent },
+  //     // { path: 'sun', component:  SunComponent },
+  //     // { path: 'garden', component:  GardenComponent },
+  //     // { path: 'heart', component:  HeartComponent },
+  //     // { path: 'bookmark', component:  BookmarkComponent },
+  //     // { path: 'timemachine', component:  TimemachineComponent },
+  //     // { path: 'appgallery', component:  AppgalleryComponent },
+  //     // { path: 'calendar', component:  ThedayComponent },
+  //     { path: '**', redirectTo: '', pathMatch: 'full' },
+  //   ]
+  // },
   {
     path: '',
     component: IndexLayoutComponent,
@@ -81,7 +81,7 @@ const routes: Routes = [
       { path: 'privacy', component: PrivacyComponent },
       { path: 'terms', component: TermsComponent },
       { path: 'about', component: AboutComponent },
-      { path: 'popupstore', component: XylvpopupComponent },
+      { path: 'appgallery', component: AppgalleryComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'hello', component: HelloComponent },
       { path: '', component: HelloComponent },
