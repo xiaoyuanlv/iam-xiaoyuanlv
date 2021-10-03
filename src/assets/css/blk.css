@@ -41,6 +41,7 @@
   --danger: #fd5d93;
   --light: #adb5bd;
   --dark: #212529;
+  --darkcard: #2f3f4e2f;
   --default: #344675;
   --lightgary: #525f7f;
   --lightergray: #9A9A9A;
@@ -269,6 +270,10 @@ body.light-theme {
 
 .light-theme .hit-the-floor {
   color: var(--white);
+}
+
+.dark-theme .card {
+  background-color: var(--darkcard);
 }
 
 .light-theme .card p {
