@@ -32,7 +32,7 @@ export class IndexNavbarComponent implements OnInit {
         body.classList.toggle('dark-theme');
         body.classList.toggle('light-theme');
         themeicon.classList.toggle('fa-sun');
-        themeicon.classList.toggle('fa-moon');
+        themeicon.classList.toggle('fa-star');
     }
     `;
     var F = new Function(str);
