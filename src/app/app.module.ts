@@ -28,7 +28,6 @@ import { LoginComponent } from './pages/auth/login/login.component';
 import { SignupComponent } from './pages/auth/signup/signup.component';
 import { ForgotpasswordComponent } from './pages/auth/forgotpassword/forgotpassword.component';
 import { AdminDashboardComponent } from './pages/admin/admin-dashboard/admin-dashboard.component';
-import { XylvpopupComponent } from './pages/home/xylvpopup/xylvpopup.component';
 import { AppsPrivacyComponent } from './pages/apps/apps-privacy/apps-privacy.component';
 import { AppsTermsComponent } from './pages/apps/apps-terms/apps-terms.component';
 import { PrivacyComponent } from './pages/home/privacy/privacy.component';
@@ -70,7 +69,6 @@ import { ThedayComponent } from './pages/spaces/theday/theday.component';
     SignupComponent,
     ForgotpasswordComponent,
     AdminDashboardComponent,
-    XylvpopupComponent,
     AppsPrivacyComponent,
     AppsTermsComponent,
     PrivacyComponent,

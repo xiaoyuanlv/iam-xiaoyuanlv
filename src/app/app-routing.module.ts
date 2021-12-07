@@ -18,7 +18,6 @@ import { HelloComponent } from './pages/home/hello/hello.component';
 import { PrivacyComponent } from './pages/home/privacy/privacy.component';
 import { TermsComponent } from './pages/home/terms/terms.component';
 import { XspaceComponent } from './pages/home/xspace/xspace.component';
-import { XylvpopupComponent } from './pages/home/xylvpopup/xylvpopup.component';
 import { AppgalleryComponent } from './pages/spaces/appgallery/appgallery.component';
 import { BookmarkComponent } from './pages/spaces/bookmark/bookmark.component';
 import { HeartComponent } from './pages/spaces/heart/heart.component';
