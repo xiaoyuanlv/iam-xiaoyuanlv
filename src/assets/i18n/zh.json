@@ -5,7 +5,7 @@
     "about_title_name" : "Xiao Yuan Lv",
     "my_name" : "Seint Seint Thu",
     "my_chinese_name" : "吕圆圆",
-    "my_nick_name" : "小圆 ( 吕 )",
+    "my_nick_name" : "小圆",
     "name" : "名字" ,
     "race" : "种族" ,
     "call_me" : "可以叫我",
@@ -30,7 +30,6 @@
     "korean" : "韩国语",
     "star" : "星座",
     "moon" : "月亮星座",
-    "rising" : "上升星座",
     "year" : "年 龙生肖",
     "month" : "月 牛生肖",
     "day" : "日期 兔生肖",
@@ -69,5 +68,6 @@
     "one_of_the_best_food_for_me" : "对我来说世界上最好的食物是",
     "french_fried_potatoes" : "炸土豆",
     "year_of_tiger": "虎年",
-    "chinese-myanmar": "中缅"
+    "chinese-myanmar": "中缅",
+    "brave": "勇敢"
 }

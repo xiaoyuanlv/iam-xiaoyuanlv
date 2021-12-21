@@ -30,7 +30,6 @@
     "korean" : "korean",
     "star" : "Star",
     "moon" : "Moon",
-    "rising" : "Rising",
     "year" : "Year",
     "month" : "Month",
     "day" : "Day",
@@ -69,5 +68,6 @@
     "one_of_the_best_food_for_me" : "The best food in the world for me is",
     "french_fried_potatoes" : "French Fried Potatoes",
     "year_of_tiger": "Year of Tiger",
-    "chinese-myanmar": "Chinese-Myanmar"
+    "chinese-myanmar": "Chinese-Myanmar",
+    "brave": "Brave"
 }

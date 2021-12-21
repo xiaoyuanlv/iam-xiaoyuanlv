@@ -12,9 +12,6 @@ import { environment } from '../environments/environment';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IndexLayoutComponent } from './layouts/index-layout/index-layout.component';
-import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
-import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-import { MemberLayoutComponent } from './layouts/member-layout/member-layout.component';
 import { IndexFooterComponent } from './components/footers/index-footer/index-footer.component';
 import { AuthFooterComponent } from './components/footers/auth-footer/auth-footer.component';
 import { AdminFooterComponent } from './components/footers/admin-footer/admin-footer.component';
@@ -34,28 +31,18 @@ import { PrivacyComponent } from './pages/home/privacy/privacy.component';
 import { TermsComponent } from './pages/home/terms/terms.component';
 import { AboutComponent } from './pages/home/about/about.component';
 import { XspaceComponent } from './pages/home/xspace/xspace.component';
-import { LaptopInsiderLayoutComponent } from './layouts/laptop-insider-layout/laptop-insider-layout.component';
-import { WeekCalendarComponent } from './components/calendars/week-calendar/week-calendar.component';
 
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { StarComponent } from './pages/spaces/star/star.component';
-import { MoonComponent } from './pages/spaces/moon/moon.component';
-import { SunComponent } from './pages/spaces/sun/sun.component';
-import { HeartComponent } from './pages/spaces/heart/heart.component';
 import { BookmarkComponent } from './pages/spaces/bookmark/bookmark.component';
 import { AppgalleryComponent } from './pages/spaces/appgallery/appgallery.component';
 import { TimemachineComponent } from './pages/spaces/timemachine/timemachine.component';
-import { ThedayComponent } from './pages/spaces/theday/theday.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexLayoutComponent,
-    AuthLayoutComponent,
-    AdminLayoutComponent,
-    MemberLayoutComponent,
     IndexFooterComponent,
     AuthFooterComponent,
     AdminFooterComponent,
@@ -75,16 +62,9 @@ import { ThedayComponent } from './pages/spaces/theday/theday.component';
     TermsComponent,
     AboutComponent,
     XspaceComponent,
-    LaptopInsiderLayoutComponent,
-    WeekCalendarComponent,
-    StarComponent,
-    MoonComponent,
-    SunComponent,
-    HeartComponent,
     BookmarkComponent,
     AppgalleryComponent,
     TimemachineComponent,
-    ThedayComponent,
   ],
   imports: [
     BrowserModule,
