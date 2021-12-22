@@ -13,8 +13,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IndexLayoutComponent } from './layouts/index-layout/index-layout.component';
 import { IndexFooterComponent } from './components/footers/index-footer/index-footer.component';
-import { AuthFooterComponent } from './components/footers/auth-footer/auth-footer.component';
-import { AdminFooterComponent } from './components/footers/admin-footer/admin-footer.component';
 import { IndexNavbarComponent } from './components/navbars/index-navbar/index-navbar.component';
 import { AuthNavbarComponent } from './components/navbars/auth-navbar/auth-navbar.component';
 import { AdminNavbarComponent } from './components/navbars/admin-navbar/admin-navbar.component';
@@ -44,8 +42,6 @@ import { TimemachineComponent } from './pages/spaces/timemachine/timemachine.com
     AppComponent,
     IndexLayoutComponent,
     IndexFooterComponent,
-    AuthFooterComponent,
-    AdminFooterComponent,
     IndexNavbarComponent,
     AuthNavbarComponent,
     AdminNavbarComponent,
