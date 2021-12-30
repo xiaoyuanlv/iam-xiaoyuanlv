@@ -16,6 +16,7 @@ export class AppsPrivacyComponent implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router) {
     this.appArr[0] = new Mapp("1", "Dhammapada") 
     this.appArr[1] =  new Mapp("2", "Planet") 
+    this.appArr[2] =  new Mapp("3", "SDG") 
   }
 
   ngOnInit(): void {
