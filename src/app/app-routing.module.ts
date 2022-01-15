@@ -44,7 +44,7 @@ const routes: Routes = [
     children: [
       { path: 'privacy', component: PrivacyComponent },
       { path: 'terms', component: TermsComponent },
-      { path: 'about', component: AboutComponent },
+      { path: 'me', component: AboutComponent },
       { path: 'appgallery', component: AppgalleryComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'hello', component: HelloComponent },
