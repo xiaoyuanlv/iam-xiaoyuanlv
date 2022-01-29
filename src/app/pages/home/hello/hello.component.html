@@ -16,7 +16,7 @@
           <div class="col-lg-6 col-md-6">
 
             <h1 class="highlightmarker"> Hello <i class="fas fa-comment" style="font-size: 1.7em;"></i></h1>
-            <p class="mb-3 ">What do I do? <br/> code 📱 Design 🎨 </p>
+            <p class="mb-3 ">  <span class="badge badge-success">What do I do?</span> <br/> <span class="badge badge-info mr-2">code 📱</span>    <span class="badge badge-primary mr-2">design 🎨</span> <span class="badge badge-white">book 📖</span>  </p>
             <div class="btn-wrapper mb-3">
               <a [routerLink]="[ '/spaces' ]" class="highlightmarker">
                 Spaces <i class="tim-icons icon-minimal-right"></i>
@@ -36,7 +36,7 @@
             <div class="col-md-12 mb-2">
               <h1 class="hit-the-floor">{{ currentMonth }}</h1>
             </div>
-            <div class="col-md-12 mt-lg-5">
+            <div class="col-md-6 mt-lg-5">
               <div class="row">
                 <div class="col-lg-6 col-sm-12 px-2 py-2">
                   <div class="card card-stats" [ngClass]="{'upper': w1upper != ''}">
@@ -44,7 +44,7 @@
                       <div class="row">
                         <div class="col-5 col-md-4">
                           <div class="icon-big text-center icon-warning">
-                            <i class="fas fa-star text-info"></i>
+                            <i class="fas fa-calendar-day text-info"></i>
                           </div>
                         </div>
                         <div class="col-7 col-md-8">
@@ -63,7 +63,7 @@
                       <div class="row">
                         <div class="col-5 col-md-4">
                           <div class="icon-big text-center icon-warning ">
-                            <i class="fas fa-chess-knight text-danger"></i>
+                            <i class="fas fa-calendar-plus text-danger"></i>
                           </div>
                         </div>
                         <div class="col-7 col-md-8">
@@ -84,7 +84,7 @@
                       <div class="row">
                         <div class="col-5 col-md-4">
                           <div class="icon-big text-center icon-warning ">
-                            <i class="fas fa-mountain text-warning"></i>
+                            <i class="fas fa-calendar-alt text-warning"></i>
                           </div>
                         </div>
                         <div class="col-7 col-md-8">
@@ -103,7 +103,7 @@
                       <div class="row">
                         <div class="col-5 col-md-4">
                           <div class="icon-big text-center icon-warning ">
-                            <i class="fas fa-flag-checkered text-success"></i>
+                            <i class="fas fa-calendar-check text-success"></i>
                           </div>
                         </div>
                         <div class="col-7 col-md-8">
@@ -119,13 +119,16 @@
               </div>
             </div>
 
+            <div class="col-md-6 mt-lg-5">
+              <img src="../../../assets/img/{{ labsImage }}" class="img-fluid floating">
+            </div>
            
           </div>
         </div>
       </section>
     </section>
 
-    <section class="section section-lg">
+    <!-- <section class="section section-lg">
       <img src="../assets/img/path4.png" class="path">
       <img src="../assets/img/path5.png" class="path2">
       <img src="../assets/img/path2.png" class="path3">
@@ -214,7 +217,7 @@
         </div>
       </div>
     </section>
-
+ -->
 
   </div>
 </div>
