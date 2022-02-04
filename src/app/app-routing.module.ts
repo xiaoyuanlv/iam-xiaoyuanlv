@@ -31,8 +31,8 @@ const routes: Routes = [
     component: IndexLayoutComponent,
     children: [
       { path: '', component: XspaceComponent },
-      // { path: 'garden', component:  GardenComponent },
-      // { path: 'bookmark', component:  BookmarkComponent },
+      { path: 'garden', component:  GardenComponent },
+      { path: 'bookmark', component:  BookmarkComponent },
       { path: 'time',  component:  TimemachineComponent },
       { path: 'appgallery', component:  AppgalleryComponent },
       { path: '**', redirectTo: '', pathMatch: 'full' },
