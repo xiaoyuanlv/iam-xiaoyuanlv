@@ -1,0 +1,24 @@
+
+  .starline:hover {
+    box-shadow: 0 0 2rem 2 #FFD473;
+    cursor: pointer;
+  }
+  
+  
+  svg .draw {
+    stroke: 5px solid #FF9E2C;
+    fill: black;
+    animation: drawline 17s forwards infinite;
+    stroke-dashoffset: 3300;
+    stroke-linecap: round;
+  }
+  
+  @keyframes drawline {
+    to {
+      stroke-dashoffset: 0;
+      fill: #FFD473;
+      stroke-dasharray: 3300;
+    }
+  }
+  
+  

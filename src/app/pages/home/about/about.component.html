@@ -10,9 +10,9 @@
                         <h1 class="profile-title text-left">Xiao Yuan</h1>
                         <h5 class="text-on-back">{{ 'about_me' | translate }}</h5>
                         <p class="profile-description">
-                            <!-- <span class="highlightmarker">{{ 'about_intro' | translate }}
-                                <i class="fas fa-book-open"></i></span> <br /> -->
-                            <!-- {{ 'about_message' | translate }} -->
+                            <span class="highlightmarker">{{ 'about_intro' | translate }}
+                                <i class="fas fa-book-open"></i></span> <br />
+                            {{ 'about_message' | translate }}
                         </p>
                         <div class="btn-wrapper profile pt-2">
 
@@ -52,12 +52,21 @@
                                             <i class="fas fa-user-astronaut"></i>
                                         </a>
                                     </li>
-                                    <!-- <li class="nav-item">
+                                    <li class="nav-item">
                                         <a class="nav-link" data-toggle="tab" href="#linkb">
                                             <i class="fas fa-school"></i>
                                         </a>
-                                    </li> -->
-                                  
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#linkc">
+                                            <i class="fas fa-heart"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#linkd">
+                                            <i class="fas fa-key"></i>
+                                        </a>
+                                    </li>
 
                                 </ul>
                                 <div class="tab-content tab-subcategories">
@@ -99,6 +108,13 @@
                                                     </tr>
                                                     <tr>
                                                         <td>
+                                                            <i class="fas fa-map highlightmarker"></i> &nbsp;
+                                                            <span class="highlightmarker"> {{ 'i_was_born_in' | translate }} ... </span> &nbsp;
+                                                            <span class="badge badge-white">{{ 'yangon_myanmar' | translate }}</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
                                                             <i class="fas fa-user-astronaut highlightmarker"></i> &nbsp;
                                                             <span class="highlightmarker"> {{ 'race' | translate }} ...
                                                             </span> &nbsp;
@@ -115,7 +131,7 @@
                                                                 }}</span>
                                                         </td>
                                                     </tr>
-                                                    <!-- <tr>
+                                                    <tr>
                                                         <td>
                                                             <i class="fas fa-carrot highlightmarker"></i> &nbsp;
                                                             <span class="highlightmarker"> {{ 'food' | translate }}
@@ -132,13 +148,19 @@
                                                             <span class="badge badge-white">{{ 'non-binary' | translate
                                                                 }}</span>
                                                         </td>
-                                                    </tr> -->
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-star highlightmarker"></i> &nbsp; <span
+                                                                class="highlightmarker">{{ 'star' | translate }} ...</span> &nbsp;  🐲 🦁  ♒️ 🦅 🌃
+                                                        </td>
+                                                    </tr>
 
                                                 </tbody>
                                             </table>
                                         </div>
                                     </div>
-                                    <!-- <div class="tab-pane" id="linkb">
+                                    <div class="tab-pane" id="linkb">
                                         <div class="table-responsive">
                                             <table class="table table-hover " id="plain-table">
 
@@ -189,7 +211,79 @@
                                                 </tbody>
                                             </table>
                                         </div>
-                                    </div> -->
+                                    </div>
+
+
+                                    <div class="tab-pane" id="linkc">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover " id="plain-table">
+                                               
+                                                <tbody>
+
+                                                   
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-heart highlightmarker"></i> &nbsp; <span
+                                                                class="highlightmarker"> {{ 'i_value' | translate }} ...</span>
+                                                            &nbsp;
+                                                            <span class="badge badge-white mr-2">{{ 'five_precepts_of_buddhism' | translate }}</span>
+                                                            <span class="badge badge-white mr-2">{{ 'wisdom' | translate }}</span>
+                                                            <span class="badge badge-white mr-2">{{ 'freedom' | translate }}</span>
+                                                            <span class="badge badge-white mr-2">{{ 'respect' | translate }}</span>
+                                                            <span class="badge badge-white mr-2">{{ 'love' | translate }}</span>
+                                                        </td>
+                                                    </tr>
+                                                  
+                                                     
+                                                   
+                                           
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="tab-pane" id="linkd">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover " id="plain-table">
+                                                <tbody>
+                                                   
+                                                   
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-lightbulb highlightmarker"></i> &nbsp; <span
+                                                                class="highlightmarker"> {{ 'i_know' | translate }} ...</span>
+                                                            &nbsp; <p> {{ 'what_i_know' | translate }} </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-scroll highlightmarker"></i> &nbsp; <span
+                                                                class="highlightmarker"> {{ 'letter_to_the_young' | translate }} ...</span>
+                                                            &nbsp; <br/> <p> {{ 'my_letter_to_the_young' | translate }} </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-book-open highlightmarker"></i> &nbsp; <span
+                                                                class="highlightmarker"> {{ 'hobby' | translate }}...</span> <span
+                                                                class="badge badge-white"> 📖  {{ 'reading' | translate }} </span> . <span
+                                                                class="badge badge-white"> 💻 {{ 'code_or_design' | translate }} </span> .
+                                                            <span class="badge badge-white"> 🏡 {{ 'gardening' | translate }} </span> .
+                                                            <span class="badge badge-white"> 🎮  {{ 'game' | translate }} </span> .
+                                                            <span class="badge badge-white"> 🚴  {{ 'bicycle' | translate }} </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fas fa-quote-left highlightmarker"></i> &nbsp; <span
+                                                                class="highlightmarker">{{ 'quote' | translate }} ...</span> &nbsp;<br/> <p> {{ 'my_fav_quote' | translate }} </p>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 
 
                                 </div>
@@ -199,7 +293,7 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="section">
+        <div class="section">
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-md-6">
@@ -285,10 +379,8 @@
             </div>
 
          
-        </div> -->
+        </div>
        
-          <!-- <img alt="..." src="../../../assets/img/train.png"
-            class="w-full align-bottom rounded-t-lg px-5 mt-5" style="width: 55%; height: auto;" />
-            <br/> -->
+        
     </div>
 </div>

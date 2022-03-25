@@ -14,6 +14,11 @@ import { TermsComponent } from './pages/home/terms/terms.component';
 import { XspaceComponent } from './pages/home/xspace/xspace.component';
 import { AppgalleryComponent } from './pages/spaces/appgallery/appgallery.component';
 import { BookmarkComponent } from './pages/spaces/bookmark/bookmark.component';
+import { HeartComponent } from './pages/spaces/heart/heart.component';
+import { MoonComponent } from './pages/spaces/moon/moon.component';
+import { StarComponent } from './pages/spaces/star/star.component';
+import { SunComponent } from './pages/spaces/sun/sun.component';
+import { ThedayComponent } from './pages/spaces/theday/theday.component';
 import { TimemachineComponent } from './pages/spaces/timemachine/timemachine.component';
 
 const routes: Routes = [
@@ -31,10 +36,15 @@ const routes: Routes = [
     component: IndexLayoutComponent,
     children: [
       { path: '', component: XspaceComponent },
-      // { path: 'garden', component:  GardenComponent },
-      // { path: 'bookmark', component:  BookmarkComponent },
+      { path: 'garden', component:  GardenComponent },
+      { path: 'bookmark', component:  BookmarkComponent },
       { path: 'time',  component:  TimemachineComponent },
       { path: 'appgallery', component:  AppgalleryComponent },
+      { path: 'star', component:  StarComponent },
+      { path: 'moon', component:  MoonComponent },
+      { path: 'sun', component:  SunComponent },
+      { path: 'heart', component:  HeartComponent },
+      { path: 'calendar', component:  ThedayComponent },
       { path: '**', redirectTo: '', pathMatch: 'full' },
     ]
   },

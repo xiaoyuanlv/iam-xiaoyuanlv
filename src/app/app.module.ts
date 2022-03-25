@@ -33,9 +33,14 @@ import { XspaceComponent } from './pages/home/xspace/xspace.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { StarComponent } from './pages/spaces/star/star.component';
+import { MoonComponent } from './pages/spaces/moon/moon.component';
+import { SunComponent } from './pages/spaces/sun/sun.component';
+import { HeartComponent } from './pages/spaces/heart/heart.component';
 import { BookmarkComponent } from './pages/spaces/bookmark/bookmark.component';
 import { AppgalleryComponent } from './pages/spaces/appgallery/appgallery.component';
 import { TimemachineComponent } from './pages/spaces/timemachine/timemachine.component';
+import { ThedayComponent } from './pages/spaces/theday/theday.component';
 
 @NgModule({
   declarations: [
@@ -58,9 +63,14 @@ import { TimemachineComponent } from './pages/spaces/timemachine/timemachine.com
     TermsComponent,
     AboutComponent,
     XspaceComponent,
+    StarComponent,
+    MoonComponent,
+    SunComponent,
+    HeartComponent,
     BookmarkComponent,
     AppgalleryComponent,
     TimemachineComponent,
+    ThedayComponent,
   ],
   imports: [
     BrowserModule,
