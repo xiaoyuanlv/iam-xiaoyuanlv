@@ -10,7 +10,7 @@
 
 
             <div class="content-center">
-                <div class="row row-grid justify-content-center align-items-center text-center">
+                <div class="row row-grid ">
 
                     <div class="col-lg-6">
                         <h1 class="hit-the-floor"><i class="fas fa-sun"></i></h1>
@@ -21,8 +21,8 @@
                     </div>
 
                     <div class="col-lg-6">
-                        <div class="card py-5" *ngFor="let suntime of currentSunTimeList">
-                            <p class="text-success" >
+                        <div class="card py-5 text-left px-5" *ngFor="let suntime of currentSunTimeList">
+                            <p class="text-info" >
                                 Sunrise :  {{ suntime.sunrise }}
                             </p>
                             <p class="text-info">
@@ -33,6 +33,24 @@
                             </p>
                             <p class="text-warning">
                                 Day Length :  {{ suntime.day_length }}
+                            </p>
+                            <p class="text-success">
+                                Civil Twilight Begin : {{ suntime.civil_twilight_begin }}
+                            </p>
+                            <p class="text-success">
+                                Civil Twilight End : {{ suntime.civil_twilight_end }}
+                            </p>
+                            <p class="text-danger">
+                                Nautical Twilight Begin : {{ suntime.nautical_twilight_begin }}
+                            </p>
+                            <p class="text-danger">
+                                Nautical Twilight End : {{ suntime.nautical_twilight_end }}
+                            </p>
+                            <p class="text-primary">
+                                Astronomical Twilight Begin : {{ suntime.astronomical_twilight_begin }}
+                            </p>
+                            <p class="text-primary">
+                                Astronomical Twilight End : {{ suntime.astronomical_twilight_end }}
                             </p>
                             <p>
                                 Location : Yangon, Myanmar 
