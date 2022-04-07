@@ -71,6 +71,7 @@ import { ThedayComponent } from './pages/spaces/theday/theday.component';
     AppgalleryComponent,
     TimemachineComponent,
     ThedayComponent,
+    BookmarkComponent,
   ],
   imports: [
     BrowserModule,
