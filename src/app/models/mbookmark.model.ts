@@ -4,4 +4,5 @@ export class Mbookmark {
     quote: string = '';
     badgecolor: string = '';
     badgeicon: string = '';
+    language: string = '';
 }

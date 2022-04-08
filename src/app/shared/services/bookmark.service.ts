@@ -10,8 +10,8 @@ export class BookmarkService {
 
   constructor(private firestore: AngularFirestore) { }
 
-  getBookmark() {
-    return this.firestore.collection('Bookmarks').snapshotChanges();
+  getBookmark(language: string) {
+    return this.firestore.collection('Bookmarks', ref => ref.where('language', '==', language)).snapshotChanges()
   }
 
   createBookmark(obj: any){

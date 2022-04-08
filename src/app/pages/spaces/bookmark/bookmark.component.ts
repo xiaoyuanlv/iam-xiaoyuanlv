@@ -10,15 +10,16 @@ import { BookmarkService } from 'src/app/shared/services/bookmark.service';
 export class BookmarkComponent implements OnInit {
 
   bookmarklist : Array<Mbookmark> = [];
+  language: string = 'en';
 
   constructor(private bookmarkSvc: BookmarkService) { }
 
   ngOnInit(): void {
-    this.getBookmarkList();
+    this.getBookmarkList(this.language);
   }
 
-  getBookmarkList() {
-    this.bookmarkSvc.getBookmark().subscribe(data => {
+  getBookmarkList(language: string) {
+    this.bookmarkSvc.getBookmark(language).subscribe(data => {
       this.bookmarklist = data.map(e => {
         return {
           id: e.payload.doc.id,
