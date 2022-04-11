@@ -81,7 +81,7 @@ export class TimemachineComponent implements OnInit {
     var minutes = new Date().getMinutes();
     var ampm = hours >= 12 ? 'pm' : 'am';
     hours = hours % 12;
-    hours = hours ? hours : 12; // the hour '0' should be '12'
+    hours = hours > 0 ? hours : 12; // the hour '0' should be '12'
 
     if(hours >= 6 && hours < 7) {
       this.currentTime = 1
