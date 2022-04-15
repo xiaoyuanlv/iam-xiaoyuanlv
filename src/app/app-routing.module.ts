@@ -16,6 +16,7 @@ import { AppgalleryComponent } from './pages/spaces/appgallery/appgallery.compon
 import { BookmarkComponent } from './pages/spaces/bookmark/bookmark.component';
 import { HeartComponent } from './pages/spaces/heart/heart.component';
 import { MoonComponent } from './pages/spaces/moon/moon.component';
+import { SkillComponent } from './pages/spaces/skill/skill.component';
 import { StarComponent } from './pages/spaces/star/star.component';
 import { SunComponent } from './pages/spaces/sun/sun.component';
 import { ThedayComponent } from './pages/spaces/theday/theday.component';
@@ -45,6 +46,7 @@ const routes: Routes = [
       { path: 'sun', component:  SunComponent },
       { path: 'heart', component:  HeartComponent },
       { path: 'calendar', component:  ThedayComponent },
+      { path: 'skill', component:  SkillComponent },
       { path: '**', redirectTo: '', pathMatch: 'full' },
     ]
   },
