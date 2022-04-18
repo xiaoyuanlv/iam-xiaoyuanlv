@@ -181,8 +181,8 @@ export class HelloComponent implements OnInit {
 
       function init() {
           if (hasWebGL()) {
-              window
-              window.fetch("https://iam-xiaoyuanlv.web.app/assets/js/points.json")
+              
+              window.fetch("https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-dashboard-pro/assets/js/points.json")
                   .then(response => response.json())
                   .then(data => {
                       makeMagic(data.points);
