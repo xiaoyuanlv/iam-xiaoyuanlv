@@ -16,11 +16,11 @@
                         </p>
                         <div class="btn-wrapper profile pt-2">
 
-                            <!-- <a class="btn btn-icon btn-success btn-round mb-2" target="_blank"
-                                href="https://linktr.ee/xiaoyuanlv" data-toggle="tooltip"
-                                data-original-title="Link Tree">
-                                <i class="fas fa-globe"></i>
-                            </a> -->
+                            <a class="btn btn-icon btn-info btn-round mb-2"
+                                href="../../../../assets/cv.pdf" target="_blank" data-toggle="tooltip"
+                                    data-original-title="Link Tree">
+                                    <i class="fas fa-scroll"></i>
+                            </a>
 
                             <span class="dropdown px-2">
                                 <a class="btn btn-primary btn-round dropdown-toggle" data-toggle="tooltip"
@@ -28,6 +28,7 @@
                                     aria-haspopup="true" aria-expanded="false">
                                     <i class="fas fa-language mr-2"></i> {{ translate.currentLang }}
                                 </a>
+                                
                                 <div class="dropdown-menu dropdown-with-icons">
                                     <button class="dropdown-item" *ngFor="let language of translate.getLangs()"
                                         (click)='switchLang(language)'>
@@ -41,7 +42,7 @@
                     <div class="col-lg-4 col-md-6 ml-auto mr-auto">
                         <div class="card card-profile card-plain">
                             <div class="card-header">
-                                <img src="../../../../assets/img/profile.png"
+                                <img src="../../../../assets/img/profile.jpg"
                                     class="img-center img-fluid rounded-circle">
                                 <h4 class="title"> {{ 'about_title_name' | translate }} </h4>
                             </div>
