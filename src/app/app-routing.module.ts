@@ -10,6 +10,7 @@ import { ContactComponent } from './pages/home/contact/contact.component';
 import { GardenComponent } from './pages/home/garden/garden.component';
 import { HelloComponent } from './pages/home/hello/hello.component';
 import { PrivacyComponent } from './pages/home/privacy/privacy.component';
+import { SocialsComponent } from './pages/home/socials/socials.component';
 import { TermsComponent } from './pages/home/terms/terms.component';
 import { XspaceComponent } from './pages/home/xspace/xspace.component';
 import { AppgalleryComponent } from './pages/spaces/appgallery/appgallery.component';
@@ -47,6 +48,7 @@ const routes: Routes = [
       { path: 'heart', component:  HeartComponent },
       { path: 'calendar', component:  ThedayComponent },
       { path: 'skill', component:  SkillComponent },
+      { path: 'social', component:  SocialsComponent },
       { path: '**', redirectTo: '', pathMatch: 'full' },
     ]
   },
@@ -60,6 +62,7 @@ const routes: Routes = [
       { path: 'appgallery', component: AppgalleryComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'hello', component: HelloComponent },
+      { path: 'social', component: SocialsComponent },
       { path: '', component: HelloComponent },
       { path: '**', redirectTo: '', pathMatch: 'full' },
     ]

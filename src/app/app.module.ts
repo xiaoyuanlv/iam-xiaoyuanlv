@@ -42,6 +42,7 @@ import { AppgalleryComponent } from './pages/spaces/appgallery/appgallery.compon
 import { TimemachineComponent } from './pages/spaces/timemachine/timemachine.component';
 import { ThedayComponent } from './pages/spaces/theday/theday.component';
 import { SkillComponent } from './pages/spaces/skill/skill.component';
+import { SocialsComponent } from './pages/home/socials/socials.component';
 
 @NgModule({
   declarations: [
@@ -74,6 +75,7 @@ import { SkillComponent } from './pages/spaces/skill/skill.component';
     ThedayComponent,
     BookmarkComponent,
     SkillComponent,
+    SocialsComponent,
   ],
   imports: [
     BrowserModule,
