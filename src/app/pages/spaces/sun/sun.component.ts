@@ -23,8 +23,11 @@ export class SunComponent implements OnInit {
   getCurrentSunTime() {
     this.sunSvc.getCurrentSunTimeUTC()
     .then(data => {
-     if(data.results != null) {
+      
+     if(data.status == 'OK' && data.results != null) {
        this.currentSunTimeList.push(data.results)
+     } else {
+       alert('soorry');
      }
     })
     .catch(console.error);

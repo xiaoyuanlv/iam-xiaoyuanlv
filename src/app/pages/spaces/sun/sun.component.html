@@ -1,5 +1,6 @@
 <div class="landing-page">
-    <div class="wrapper">
+   
+    <div class="wrapper mb-5">
         <div class="page-header">
             <img src="../assets/img/blob.png" class="path">
             <img src="../assets/img/path2.png" class="path2">
@@ -12,54 +13,15 @@
             <div class="content-center">
                 <div class="row row-grid ">
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                         <h1 class="hit-the-floor"><i class="fas fa-sun"></i></h1>
-                        <h1 class="hit-the-floor">The Sun</h1>
+                        <h1 class="hit-the-floor">Sun</h1>
                         <h5 class="text-center glass-container card highlightmarker py-2">
                             <span class="highlightmarker">... Sun Rise --- Sun Set ....</span>
                         </h5>
                     </div>
 
-                    <div class="col-lg-6">
-                        <div class="card py-5 text-left px-5" *ngFor="let suntime of currentSunTimeList">
-                            <p class="text-info" >
-                                Sunrise :  {{ suntime.sunrise }}
-                            </p>
-                            <p class="text-info">
-                                Sunset :  {{ suntime.sunset }}
-                            </p>
-                            <p class="text-warning">
-                                Solar Noon :  {{ suntime.solar_noon }}
-                            </p>
-                            <p class="text-warning">
-                                Day Length :  {{ suntime.day_length }}
-                            </p>
-                            <p class="text-success">
-                                Civil Twilight Begin : {{ suntime.civil_twilight_begin }}
-                            </p>
-                            <p class="text-success">
-                                Civil Twilight End : {{ suntime.civil_twilight_end }}
-                            </p>
-                            <p class="text-danger">
-                                Nautical Twilight Begin : {{ suntime.nautical_twilight_begin }}
-                            </p>
-                            <p class="text-danger">
-                                Nautical Twilight End : {{ suntime.nautical_twilight_end }}
-                            </p>
-                            <p class="text-primary">
-                                Astronomical Twilight Begin : {{ suntime.astronomical_twilight_begin }}
-                            </p>
-                            <p class="text-primary">
-                                Astronomical Twilight End : {{ suntime.astronomical_twilight_end }}
-                            </p>
-                            <p>
-                                Location : Yangon, Myanmar 
-                            </p>
-                            <p>
-                                Time Zone : UTC
-                            </p>
-                        </div>
-                    </div>
+                 
 
                 </div>
             </div>
@@ -67,5 +29,66 @@
 
 
         
+    </div>
+</div>
+
+<div class="section section-lg">
+    <img src="../assets/img/path4.png" class="path">
+    <div class="container text-center">
+
+        <h1 class="py-5" style="font-size: 5em;">
+            <i class="fas fa-sun text-success mr-2"></i>
+            <i class="fas fa-sun text-info mr-2"></i>
+            <i class="fas fa-sun text-primary mr-2"></i>
+            <i class="fas fa-sun text-warning mr-2"></i>
+            <i class="fas fa-sun text-danger mr-2"></i>
+        </h1>
+
+
+        <div class="row row-grid">
+
+            <div class="col-lg-12">
+                <div class="card py-5 text-left px-5 mt-2" *ngFor="let suntime of currentSunTimeList">
+                    <p class="text-info" >
+                        Sunrise :  {{ suntime.sunrise }}
+                    </p>
+                    <p class="text-info">
+                        Sunset :  {{ suntime.sunset }}
+                    </p>
+                    <p class="text-warning">
+                        Solar Noon :  {{ suntime.solar_noon }}
+                    </p>
+                    <p class="text-warning">
+                        Day Length :  {{ suntime.day_length }}
+                    </p>
+                    <p class="text-success">
+                        Civil Twilight Begin : {{ suntime.civil_twilight_begin }}
+                    </p>
+                    <p class="text-success">
+                        Civil Twilight End : {{ suntime.civil_twilight_end }}
+                    </p>
+                    <p class="text-danger">
+                        Nautical Twilight Begin : {{ suntime.nautical_twilight_begin }}
+                    </p>
+                    <p class="text-danger">
+                        Nautical Twilight End : {{ suntime.nautical_twilight_end }}
+                    </p>
+                    <p class="text-primary">
+                        Astronomical Twilight Begin : {{ suntime.astronomical_twilight_begin }}
+                    </p>
+                    <p class="text-primary">
+                        Astronomical Twilight End : {{ suntime.astronomical_twilight_end }}
+                    </p>
+                    <p>
+                        Location : Yangon, Myanmar 
+                    </p>
+                    <p>
+                        Time Zone : UTC
+                    </p>
+                    <p class="mt-5"> Source : " https://api.sunrise-sunset.org "</p>
+                </div>
+            </div>
+
+        </div>
     </div>
 </div>
