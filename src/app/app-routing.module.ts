@@ -48,7 +48,7 @@ const routes: Routes = [
       { path: 'heart', component:  HeartComponent },
       { path: 'calendar', component:  ThedayComponent },
       { path: 'skill', component:  SkillComponent },
-      { path: 'social', component:  SocialsComponent },
+      // { path: 'social', component:  SocialsComponent },
       { path: '**', redirectTo: '', pathMatch: 'full' },
     ]
   },
@@ -62,7 +62,7 @@ const routes: Routes = [
       { path: 'appgallery', component: AppgalleryComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'hello', component: HelloComponent },
-      { path: 'social', component: SocialsComponent },
+      // { path: 'social', component: SocialsComponent },
       { path: '', component: HelloComponent },
       { path: '**', redirectTo: '', pathMatch: 'full' },
     ]
