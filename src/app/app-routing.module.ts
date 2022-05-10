@@ -33,25 +33,25 @@ const routes: Routes = [
       { path: '', redirectTo: '/', pathMatch: 'full' },
     ]
   },
-  // {
-  //   path: 'spaces',
-  //   component: IndexLayoutComponent,
-  //   children: [
-  //     { path: '', component: XspaceComponent },
-  //     { path: 'garden', component:  GardenComponent },
-  //     { path: 'bookmark', component:  BookmarkComponent },
-  //     { path: 'time',  component:  TimemachineComponent },
-  //     { path: 'appgallery', component:  AppgalleryComponent },
-  //     { path: 'star', component:  StarComponent },
-  //     { path: 'moon', component:  MoonComponent },
-  //     { path: 'sun', component:  SunComponent },
-  //     { path: 'heart', component:  HeartComponent },
-  //     { path: 'calendar', component:  ThedayComponent },
-  //     { path: 'skill', component:  SkillComponent },
-  //     // { path: 'social', component:  SocialsComponent },
-  //     { path: '**', redirectTo: '', pathMatch: 'full' },
-  //   ]
-  // },
+  {
+    path: 'spaces',
+    component: IndexLayoutComponent,
+    children: [
+      { path: '', component: XspaceComponent },
+      { path: 'garden', component:  GardenComponent },
+      { path: 'bookmark', component:  BookmarkComponent },
+      { path: 'time',  component:  TimemachineComponent },
+      { path: 'appgallery', component:  AppgalleryComponent },
+      { path: 'star', component:  StarComponent },
+      { path: 'moon', component:  MoonComponent },
+      { path: 'sun', component:  SunComponent },
+      { path: 'heart', component:  HeartComponent },
+      { path: 'calendar', component:  ThedayComponent },
+      { path: 'skill', component:  SkillComponent },
+      { path: 'social', component:  SocialsComponent },
+      { path: '**', redirectTo: '', pathMatch: 'full' },
+    ]
+  },
   {
     path: '',
     component: IndexLayoutComponent,
