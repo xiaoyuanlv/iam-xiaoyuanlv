@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndexFooterComponent implements OnInit {
 
+  currentYear = new Date().getFullYear();
+
   constructor() {
    
    }
