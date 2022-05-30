@@ -6,7 +6,7 @@
             <div class="container align-items-center">
 
                 <div class="row">
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-6 col-md-6" >
                         <h1 class="profile-title text-left">Xiao Yuan</h1>
                         <h5 class="text-on-back">{{ 'about_me' | translate }}</h5>
                         <p class="profile-description">
@@ -35,8 +35,8 @@
                     </div>
                     <div class="col-lg-4 col-md-6 ml-auto mr-auto">
                         <div class="card card-profile card-plain">
-                            <div class="card-header">
-                                <img src="../../../../assets/img/profile.png"
+                            <div class="card-header" *ngFor="let mInfo of infoList">
+                                <img [src]="mInfo.photo"
                                     class="img-center img-fluid rounded-circle">
                                 <h4 class="title"> {{ 'about_title_name' | translate }} </h4>
                             </div>
@@ -328,25 +328,12 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                   
                                     <tr>
                                         <td>
                                             <i class="fas fa-star highlightmarker"></i> &nbsp;
-                                            <span class="highlightmarker"> 2022 ... </span> &nbsp; <span
-                                                class="text-description"> Brave as Tiger </span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <i class="fas fa-star-half-alt highlightmarker"></i> &nbsp;
-                                            <span class="highlightmarker"> 2021 ... </span> &nbsp; <span
-                                                class="text-description"> {{ 'coding_with_stars' | translate }} </span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <i class="fas fa-palette highlightmarker"></i> &nbsp;
-                                            <span class="highlightmarker"> 2018 - 2020 … </span> &nbsp; <span
-                                                class="text-description"> {{ 'work_on_some_creative_projects_solo' |
+                                            <span class="highlightmarker"> … </span> &nbsp; <span
+                                                class="text-description"> {{ 'life_go_on' |
                                                 translate }} </span>
                                         </td>
                                     </tr>

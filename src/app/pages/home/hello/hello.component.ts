@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { DatePipe } from '@angular/common';
+
 import { Actionlist } from 'src/app/models/actionlist.model';
 import { ActionlistService } from 'src/app/shared/services/actionlist.service';
+
+import { Info } from 'src/app/models/info.model';
+import { InfoService } from 'src/app/shared/services/info.service';
 
 @Component({
   selector: 'app-hello',
@@ -26,8 +30,9 @@ export class HelloComponent implements OnInit {
   labsImage = 'clabsnight.png';
 
   actionlist: Array<Actionlist> = [];
+  infoList: Array<Info> = [];
 
-  constructor(private datePipe: DatePipe, private actionlistSvc: ActionlistService) {
+  constructor(private datePipe: DatePipe, private actionlistSvc: ActionlistService, private infoSvc: InfoService) {
 
     this.currentMonth = this.datePipe.transform(this.mcurrentDate, 'MMM yyyy');
 
@@ -55,6 +60,7 @@ export class HelloComponent implements OnInit {
   ngOnInit(): void {
     this.getActionList();
     this.runtheworld();
+    this.getInfoList()
   }
 
   runtheworld() {
@@ -210,6 +216,15 @@ export class HelloComponent implements OnInit {
     });
   }
 
-
+  getInfoList() {
+    this.infoSvc.getInfo().subscribe(data => {
+      this.infoList = data.map(e => {
+        return {
+          id: e.payload.doc.id,
+          ...e.payload.doc.data() as Object
+        } as Info;
+      })
+    });
+  }
 
 }
