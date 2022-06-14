@@ -14,6 +14,10 @@ export class AppgalleryService {
     return this.firestore.collection('appgallery').snapshotChanges();
   }
 
+  getAppGallerybyID(id:number) {
+    return this.firestore.collection('appgallery', ref => ref.where('app_id','==', id )).snapshotChanges();
+  }
+
   createAppGallerylist(obj: any){
     return this.firestore.collection('appgallery').add(obj);
   }

@@ -14,15 +14,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IndexLayoutComponent } from './layouts/index-layout/index-layout.component';
 import { IndexFooterComponent } from './components/footers/index-footer/index-footer.component';
 import { IndexNavbarComponent } from './components/navbars/index-navbar/index-navbar.component';
-import { AuthNavbarComponent } from './components/navbars/auth-navbar/auth-navbar.component';
-import { AdminNavbarComponent } from './components/navbars/admin-navbar/admin-navbar.component';
 import { HelloComponent } from './pages/home/hello/hello.component';
 import { GardenComponent } from './pages/home/garden/garden.component';
 import { ContactComponent } from './pages/home/contact/contact.component';
 import { LoginComponent } from './pages/auth/login/login.component';
 import { SignupComponent } from './pages/auth/signup/signup.component';
 import { ForgotpasswordComponent } from './pages/auth/forgotpassword/forgotpassword.component';
-import { AdminDashboardComponent } from './pages/admin/admin-dashboard/admin-dashboard.component';
 import { AppsPrivacyComponent } from './pages/apps/apps-privacy/apps-privacy.component';
 import { AppsTermsComponent } from './pages/apps/apps-terms/apps-terms.component';
 import { PrivacyComponent } from './pages/home/privacy/privacy.component';
@@ -40,9 +37,6 @@ import { HeartComponent } from './pages/spaces/heart/heart.component';
 import { BookmarkComponent } from './pages/spaces/bookmark/bookmark.component';
 import { AppgalleryComponent } from './pages/spaces/appgallery/appgallery.component';
 import { TimemachineComponent } from './pages/spaces/timemachine/timemachine.component';
-import { ThedayComponent } from './pages/spaces/theday/theday.component';
-import { SkillComponent } from './pages/spaces/skill/skill.component';
-import { SocialsComponent } from './pages/home/socials/socials.component';
 
 @NgModule({
   declarations: [
@@ -50,15 +44,12 @@ import { SocialsComponent } from './pages/home/socials/socials.component';
     IndexLayoutComponent,
     IndexFooterComponent,
     IndexNavbarComponent,
-    AuthNavbarComponent,
-    AdminNavbarComponent,
     HelloComponent,
     GardenComponent,
     ContactComponent,
     LoginComponent,
     SignupComponent,
     ForgotpasswordComponent,
-    AdminDashboardComponent,
     AppsPrivacyComponent,
     AppsTermsComponent,
     PrivacyComponent,
@@ -72,10 +63,7 @@ import { SocialsComponent } from './pages/home/socials/socials.component';
     BookmarkComponent,
     AppgalleryComponent,
     TimemachineComponent,
-    ThedayComponent,
     BookmarkComponent,
-    SkillComponent,
-    SocialsComponent,
   ],
   imports: [
     BrowserModule,

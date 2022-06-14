@@ -10,7 +10,6 @@ import { ContactComponent } from './pages/home/contact/contact.component';
 import { GardenComponent } from './pages/home/garden/garden.component';
 import { HelloComponent } from './pages/home/hello/hello.component';
 import { PrivacyComponent } from './pages/home/privacy/privacy.component';
-import { SocialsComponent } from './pages/home/socials/socials.component';
 import { TermsComponent } from './pages/home/terms/terms.component';
 import { XspaceComponent } from './pages/home/xspace/xspace.component';
 import { AppgalleryComponent } from './pages/spaces/appgallery/appgallery.component';
@@ -20,7 +19,6 @@ import { MoonComponent } from './pages/spaces/moon/moon.component';
 import { SkillComponent } from './pages/spaces/skill/skill.component';
 import { StarComponent } from './pages/spaces/star/star.component';
 import { SunComponent } from './pages/spaces/sun/sun.component';
-import { ThedayComponent } from './pages/spaces/theday/theday.component';
 import { TimemachineComponent } from './pages/spaces/timemachine/timemachine.component';
 
 const routes: Routes = [
@@ -33,25 +31,25 @@ const routes: Routes = [
       { path: '', redirectTo: '/', pathMatch: 'full' },
     ]
   },
-  {
-    path: 'spaces',
-    component: IndexLayoutComponent,
-    children: [
-      { path: '', component: XspaceComponent },
-      { path: 'garden', component:  GardenComponent },
-      { path: 'bookmark', component:  BookmarkComponent },
-      { path: 'time',  component:  TimemachineComponent },
-      { path: 'appgallery', component:  AppgalleryComponent },
-      { path: 'star', component:  StarComponent },
-      { path: 'moon', component:  MoonComponent },
-      { path: 'sun', component:  SunComponent },
-      { path: 'heart', component:  HeartComponent },
-      { path: 'calendar', component:  ThedayComponent },
-      { path: 'skill', component:  SkillComponent },
-      { path: 'social', component:  SocialsComponent },
-      { path: '**', redirectTo: '', pathMatch: 'full' },
-    ]
-  },
+  // {
+  //   path: 'spaces',
+  //   component: IndexLayoutComponent,
+  //   children: [
+  //     { path: '', component: XspaceComponent },
+  //     { path: 'garden', component:  GardenComponent },
+  //     { path: 'bookmark', component:  BookmarkComponent },
+  //     { path: 'time',  component:  TimemachineComponent },
+  //     { path: 'appgallery', component:  AppgalleryComponent },
+  //     { path: 'star', component:  StarComponent },
+  //     { path: 'moon', component:  MoonComponent },
+  //     { path: 'sun', component:  SunComponent },
+  //     { path: 'heart', component:  HeartComponent },
+  //     { path: 'calendar', component:  ThedayComponent },
+  //     { path: 'skill', component:  SkillComponent },
+  //     { path: 'social', component:  SocialsComponent },
+  //     { path: '**', redirectTo: '', pathMatch: 'full' },
+  //   ]
+  // },
   {
     path: '',
     component: IndexLayoutComponent,
