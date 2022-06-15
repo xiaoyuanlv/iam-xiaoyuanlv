@@ -60,6 +60,7 @@ const routes: Routes = [
       { path: 'appgallery', component: AppgalleryComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'hello', component: HelloComponent },
+      { path: 'time', component: TimemachineComponent },
       // { path: 'social', component: SocialsComponent },
       { path: '', component: HelloComponent },
       { path: '**', redirectTo: '', pathMatch: 'full' },
