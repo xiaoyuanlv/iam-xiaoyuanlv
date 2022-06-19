@@ -61,6 +61,7 @@ const routes: Routes = [
       { path: 'contact', component: ContactComponent },
       { path: 'hello', component: HelloComponent },
       { path: 'time', component: TimemachineComponent },
+      { path: 'moon', component:  MoonComponent },
       // { path: 'social', component: SocialsComponent },
       { path: '', component: HelloComponent },
       { path: '**', redirectTo: '', pathMatch: 'full' },
