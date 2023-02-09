@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 import { IndexLayoutComponent } from './layouts/index-layout/index-layout.component';
 
 import { AppsPrivacyComponent } from './pages/apps/apps-privacy/apps-privacy.component';
@@ -43,7 +43,7 @@ const routes: Routes = [
       { path: 'star', component:  StarComponent },
       { path: 'moon', component:  MoonComponent },
       { path: 'sun', component:  SunComponent },
-      // { path: 'heart', component:  HeartComponent },
+      { path: 'heart', component:  HeartComponent },
       // { path: 'skill', component:  SkillComponent },
       { path: '**', redirectTo: '', pathMatch: 'full' },
     ]
@@ -67,8 +67,12 @@ const routes: Routes = [
   }
 ];
 
+const options: ExtraOptions = {
+  onSameUrlNavigation: 'reload'
+};
+
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
+  imports: [RouterModule.forRoot(routes, options )],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

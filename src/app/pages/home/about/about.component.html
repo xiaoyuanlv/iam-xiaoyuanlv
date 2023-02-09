@@ -35,8 +35,8 @@
                     </div>
                     <div class="col-lg-4 col-md-6 ml-auto mr-auto">
                         <div class="card card-profile card-plain">
-                            <div class="card-header" *ngFor="let mInfo of infoList">
-                                <img [src]="mInfo.photo"
+                            <div class="card-header">
+                                <img src="../../../../assets/img/clock/9.png"
                                     class="img-center img-fluid rounded-circle">
                                 <h4 class="title"> {{ 'about_title_name' | translate }} </h4>
                             </div>
@@ -52,7 +52,7 @@
                                             <i class="fas fa-school"></i>
                                         </a>
                                     </li>
-                                    <!-- <li class="nav-item">
+                                    <li class="nav-item">
                                         <a class="nav-link" data-toggle="tab" href="#linkc">
                                             <i class="fas fa-heart"></i>
                                         </a>
@@ -61,7 +61,7 @@
                                         <a class="nav-link" data-toggle="tab" href="#linkd">
                                             <i class="fas fa-key"></i>
                                         </a>
-                                    </li> -->
+                                    </li>
 
                                 </ul>
                                 <div class="tab-content tab-subcategories">
@@ -82,15 +82,17 @@
                                                         </td>
                                                     </tr>
 
-                                                    <tr>
+                                                    <!-- <tr>
                                                         <td>
                                                             <i class="fas fa-comment highlightmarker"></i> &nbsp;
                                                             <span class="highlightmarker"> {{ 'call_me' | translate }}
                                                                 ... </span> &nbsp;
-                                                            <span class="badge badge-white">{{ 'my_nick_name' |
-                                                                translate }}</span>
+                                                            <span class="badge badge-white mr-2" >{{ 'my_nick_name' |
+                                                                translate }}</span> 
+                                                                <span class="badge badge-white mr-2">ဆရာလေး စိန္တာရီ</span> 
+                                                                <span class="badge badge-white">ဆရာလေး ဆေကဝတီ</span>
                                                         </td>
-                                                    </tr>
+                                                    </tr> -->
 
                                                     <tr>
                                                         <td>
@@ -101,7 +103,7 @@
                                                                 }}</span>
                                                         </td>
                                                     </tr>
-                                                    <!-- <tr>
+                                                    <tr>
                                                         <td>
                                                             <i class="fas fa-map highlightmarker"></i> &nbsp;
                                                             <span class="highlightmarker"> {{ 'i_was_born_in' |
@@ -109,7 +111,7 @@
                                                             <span class="badge badge-white">{{ 'yangon_myanmar' |
                                                                 translate }}</span>
                                                         </td>
-                                                    </tr> -->
+                                                    </tr>
                                                     <tr>
                                                         <td>
                                                             <i class="fas fa-user-astronaut highlightmarker"></i> &nbsp;
@@ -136,7 +138,7 @@
                                                             <span class="badge badge-white">{{ 'vegan' | translate
                                                                 }}</span>
                                                         </td>
-                                                    </tr>
+                                                    </tr> -->
                                                     <tr>
                                                         <td>
                                                             <i class="fas fa-genderless highlightmarker"></i> &nbsp;
@@ -152,7 +154,7 @@
                                                                 class="highlightmarker">{{ 'star' | translate }}
                                                                 ...</span> &nbsp; 🐲 🦁 ♒️ 🦅 🌃
                                                         </td>
-                                                    </tr> -->
+                                                    </tr>
 
                                                 </tbody>
                                             </table>
@@ -212,7 +214,7 @@
                                         </div>
                                     </div>
 
-<!-- 
+
                                     <div class="tab-pane" id="linkc">
                                         <div class="table-responsive">
                                             <table class="table table-hover " id="plain-table">
@@ -293,7 +295,7 @@
                                                 </tbody>
                                             </table>
                                         </div>
-                                    </div> -->
+                                    </div>
 
 
                                 </div>
@@ -332,8 +334,8 @@
                                     <tr>
                                         <td>
                                             <i class="fas fa-star highlightmarker"></i> &nbsp;
-                                            <span class="highlightmarker"> … </span> &nbsp; <span
-                                                class="text-description"> {{ 'life_go_on' |
+                                            <span class="highlightmarker">  2022 … </span> &nbsp; <span
+                                                class="text-description"> {{ 'iam_a_nun' |
                                                 translate }} </span>
                                         </td>
                                     </tr>
@@ -379,25 +381,26 @@
         </div>
 
 
-        <!-- <div class="section">
+        <div class="section">
             <div class="container">
                 <div class="row justify-content-center">
                    
                     <div class="col-lg-6 col-md-6">
 
-                        <h1 class="profile-title text-left">CV . Social . Contact</h1>
+                        <h1 class="profile-title text-left">Contact</h1>
                         <h5 class="text-on-back">More</h5>
 
                         <br/>
                         
-                        <a class="btn btn-info btn-round mt-3 mr-2" data-toggle="tooltip" data-original-title="CV"
+                        <!-- <a class="btn btn-info btn-round mt-3 mr-2" data-toggle="tooltip" data-original-title="CV"
                             aria-haspopup="true" target="_blank" href="../../../../assets/cv.pdf">
                             <i class="fas fa-scroll"></i> 
-                        </a>
+                        </a> -->
 
-                        <a class="btn btn-info btn-round mt-3 mr-2" data-toggle="tooltip" data-original-title="Social" [routerLink]="[ '/social' ]">
+                        <!-- <a class="btn btn-info btn-round mt-3 mr-2" data-toggle="tooltip" data-original-title="Social" [routerLink]="[ '/social' ]">
                             <span class="text-white"><i class="fas fa-globe"></i> </span>
-                        </a>
+                        </a> -->
+
 
                         <a class="btn btn-info btn-round mt-3" data-toggle="tooltip" data-original-title="Contact" [routerLink]="[ '/contact' ]">
                             <span class="text-white"><i class="fas fa-envelope"></i> </span>
@@ -411,7 +414,7 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
 
     </div>

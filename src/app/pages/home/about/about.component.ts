@@ -28,8 +28,8 @@ export class AboutComponent implements OnInit {
   }
   
   getInfoList() {
-    this.infoSvc.getInfo().subscribe(data => {
-      this.infoList = data.map(e => {
+    this.infoSvc.getInfo().subscribe((data: any) => {
+      this.infoList = data.map((e: any) => {
         return {
           id: e.payload.doc.id,
           ...e.payload.doc.data() as Object

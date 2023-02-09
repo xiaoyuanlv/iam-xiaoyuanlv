@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Actionlist } from '../../models/actionlist.model';
 
 
@@ -11,7 +11,8 @@ export class ActionlistService {
   constructor(private firestore: AngularFirestore) { }
 
   getActionlist() {
-    return this.firestore.collection('actionlist').snapshotChanges();
+    return this.firestore.collection('actionlist')
+    .snapshotChanges();
   }
 
   createActionlist(obj: any){
